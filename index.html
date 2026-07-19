@@ -3,444 +3,381 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Portal & Data Safety — Bharat Quest</title>
+  <title>Privacy &amp; Data Safety — Bharat Quest</title>
   <meta name="description" content="Official Legal Privacy Portal and Data Safety documentation for the Bharat Quest Android mobile game on the Google Play Store." />
-  <meta name="theme-color" content="#050911" />
+  <meta name="theme-color" content="#08111F" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/png" href="logo.png" />
 </head>
 <body>
 
-  <!-- Background Mesh & Glow Orbs -->
-  <div class="bg-mesh" aria-hidden="true"></div>
-
-  <!-- Top Navigation Header -->
-  <header class="top-header">
-    <div class="header-container">
-      <a href="#top" class="brand-group">
+  <!-- Top Sticky Game Navbar -->
+  <header class="app-navbar">
+    <div class="navbar-container">
+      <a href="#top" class="navbar-brand">
         <img src="logo.png" alt="Bharat Quest Logo" class="brand-logo-img" />
-        <div class="brand-titles">
-          <span class="brand-name">Bharat Quest</span>
-          <span class="brand-status"><span class="status-dot"></span> Google Play Compliant</span>
+        <div class="navbar-title-wrap">
+          <span class="navbar-title text-gold-gradient">BHARAT QUEST</span>
+          <span class="navbar-subtitle"><span>🛡️</span> <span>Official Legal Portal</span></span>
         </div>
       </a>
-      <div class="header-meta">
-        <a href="https://play.google.com/store/apps/details?id=com.bharatquest.app" target="_blank" rel="noopener noreferrer" class="store-badge">
-          <span>🎮</span> <span>Play Store Listing</span>
+      <div class="navbar-actions">
+        <a href="https://play.google.com/store/apps/details?id=com.bharatquest.app" target="_blank" rel="noopener noreferrer" class="chip-gold">
+          <span>🎮</span> <span>Play Store</span>
         </a>
       </div>
     </div>
   </header>
 
-  <!-- Main Layout Grid -->
-  <div class="page-container" id="top">
+  <!-- Horizontal Scrollable Game-Screen Navigation Chips -->
+  <nav class="chip-nav-bar" aria-label="Section navigation">
+    <ul class="chip-nav-list">
+      <li><a href="#collect" class="chip-dark active"><span>📦</span> <span>Data Collection</span></a></li>
+      <li><a href="#advertising" class="chip-dark"><span>📢</span> <span>AdMob &amp; Ads</span></a></li>
+      <li><a href="#storage" class="chip-dark"><span>🗑️</span> <span>Storage &amp; Reset</span></a></li>
+      <li><a href="#data-safety" class="chip-dark"><span>📊</span> <span>Safety Table</span></a></li>
+      <li><a href="#third-party" class="chip-dark"><span>🔗</span> <span>SDK Partners</span></a></li>
+      <li><a href="#children" class="chip-dark"><span>👶</span> <span>Children</span></a></li>
+      <li><a href="#contact" class="chip-dark"><span>✉️</span> <span>Support</span></a></li>
+    </ul>
+  </nav>
+
+  <!-- Centered Game Content Container -->
+  <main class="main-container" id="top">
     
-    <!-- Left Sticky Sidebar Navigation -->
-    <aside class="sidebar-nav" aria-label="Table of Contents">
-      <div class="sidebar-title">
-        <span>Table of Contents</span>
-        <span>📑</span>
+    <!-- Hero Game Box -->
+    <div class="hero-game-box">
+      <div class="hero-emblem-container">
+        <img src="emblem.png" alt="Bharat Quest Emblem" class="hero-emblem-img" />
       </div>
-      <ul class="nav-menu">
-        <li class="nav-item"><a href="#collect" class="active"><span>Data Collection</span> <span class="step-num">01</span></a></li>
-        <li class="nav-item"><a href="#advertising"><span>Advertising & AdMob</span> <span class="step-num">02</span></a></li>
-        <li class="nav-item"><a href="#storage"><span>Storage & Deletion</span> <span class="step-num">03</span></a></li>
-        <li class="nav-item"><a href="#data-safety"><span>Data Safety Table</span> <span class="step-num">04</span></a></li>
-        <li class="nav-item"><a href="#third-party"><span>Third-Party SDKs</span> <span class="step-num">05</span></a></li>
-        <li class="nav-item"><a href="#children"><span>Children's Privacy</span> <span class="step-num">06</span></a></li>
-        <li class="nav-item"><a href="#changes"><span>Policy Updates</span> <span class="step-num">07</span></a></li>
-        <li class="nav-item"><a href="#contact"><span>Support Contact</span> <span class="step-num">08</span></a></li>
-      </ul>
-    </aside>
-
-    <!-- Right Content Area -->
-    <main class="content-main">
-      
-      <!-- Hero Overview Box -->
-      <div class="hero-box">
-        <div class="hero-tags">
-          <span class="tag-pill tag-gold">⚡ OFFICIAL LEGAL DOCUMENTATION</span>
-          <span class="tag-pill tag-blue">🛡️ OFFLINE-FIRST GAMEPLAY</span>
-        </div>
-        <div class="hero-title-row">
-          <img src="emblem.png" alt="Bharat Quest Emblem" class="hero-emblem-img" />
-          <h1 class="hero-heading" style="margin-bottom: 0 !important;">Privacy Portal &amp; Data Safety Hub</h1>
-        </div>
-        <p class="hero-desc">
-          Welcome to the official privacy center for <strong>Bharat Quest</strong>. We believe you should explore Indian heritage, collect rare legends, and master quizzes without worrying about invasive surveillance or hidden tracking.
-        </p>
-        <div class="hero-summary-grid">
-          <div class="summary-stat">
-            <span class="stat-label">Effective Date</span>
-            <span class="stat-val">July 19, 2026</span>
-          </div>
-          <div class="summary-stat">
-            <span class="stat-label">Account Required?</span>
-            <span class="stat-val" style="color: var(--accent-emerald);">No (Local Storage)</span>
-          </div>
-          <div class="summary-stat">
-            <span class="stat-label">Ad Partner</span>
-            <span class="stat-val" style="color: var(--gold-bright);">Google AdMob</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 1. Information We Collect -->
-      <section class="section-block" id="collect">
-        <div class="section-header">
-          <div class="sec-icon">📦</div>
-          <div class="sec-titles">
-            <span>Section 01</span>
-            <h2>Information We Collect</h2>
-          </div>
-        </div>
-        <div class="glass-card">
-          <div class="quick-callout">
-            <span class="callout-badge">Quick Summary</span>
-            <div class="callout-text">
-              <p>Bharat Quest operates without user registration or mandatory cloud accounts. All your game progression, coins, and unlocks are stored locally on your device.</p>
-            </div>
-          </div>
-          <div class="card-text">
-            <p>
-              Unlike online multiplayer games requiring mandatory email verification, social media logins, or continuous background syncing to external servers, <strong>Bharat Quest is designed as an offline-first mobile game</strong>.
-            </p>
-            <p>
-              When you launch and play the app, all progression metrics, scores, and rewards are created directly inside your device's private local memory (`localStorage` and native device file storage). Specifically, our app generates and maintains the following locally:
-            </p>
-          </div>
-
-          <div class="grid-cards">
-            <div class="sub-box">
-              <div class="sub-box-icon">🏆</div>
-              <h4>Quiz &amp; Accuracy Records</h4>
-              <p>Tracks your state completions, historical score accuracy, and best times across Indian culture, history, and mythology.</p>
-            </div>
-            <div class="sub-box">
-              <div class="sub-box-icon">🪙</div>
-              <h4>Economy &amp; Streaks</h4>
-              <p>Stores your earned coins, rare gems, daily login streak multipliers, and claimed daily challenge rewards.</p>
-            </div>
-            <div class="sub-box">
-              <div class="sub-box-icon">🎴</div>
-              <h4>Collection Inventory</h4>
-              <p>Maintains your unlocked legend cards, state emblems, achievement badges, custom avatars, and home state selection.</p>
-            </div>
-            <div class="sub-box">
-              <div class="sub-box-icon">⚙️</div>
-              <h4>App Preferences</h4>
-              <p>Saves your audio effects volume, background music toggle, haptic vibration feedback preferences, and display name.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 2. Advertising & AdMob -->
-      <section class="section-block" id="advertising">
-        <div class="section-header">
-          <div class="sec-icon">📢</div>
-          <div class="sec-titles">
-            <span>Section 02</span>
-            <h2>Advertising &amp; AdMob</h2>
-          </div>
-        </div>
-        <div class="glass-card">
-          <div class="quick-callout">
-            <span class="callout-badge">Quick Summary</span>
-            <div class="callout-text">
-              <p>We partner with Google AdMob to display optional rewarded ads and occasional interstitial breaks to keep the game 100% free.</p>
-            </div>
-          </div>
-          <div class="card-text">
-            <p>
-              To ensure Bharat Quest remains free to download and accessible across all regions, the application incorporates third-party advertisements delivered by <strong>Google AdMob</strong> (`@capacitor-community/admob`), a premier mobile advertising service operated by Google LLC.
-            </p>
-            <p>
-              When an ad is requested and displayed on your screen, Google AdMob and its certified advertising network partners automatically process specific technical identifiers and diagnostic metrics to deliver relevant, frequency-capped advertisements.
-            </p>
-          </div>
-
-          <ul class="check-list">
-            <li>
-              <span class="check-icon">✓</span>
-              <div><strong>Google Advertising ID (AD_ID):</strong> A unique, user-resettable identifier provided by your Android OS. It is utilized exclusively for serving relevant ad units, capping how often you see the same ad, and attributing rewarded ad completions.</div>
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              <div><strong>Device Technical Specifications:</strong> Your device model, Android OS version, screen resolution, and basic network connectivity status (e.g., Wi-Fi vs. Cellular data).</div>
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              <div><strong>Diagnostic Crash Reports:</strong> Anonymous technical performance logs if an advertisement fails to load or causes an unexpected application freeze during ad playback.</div>
-            </li>
-          </ul>
-
-          <div class="card-text" style="margin-top: 1.5rem;">
-            <p>
-              <strong>Your Opt-Out Control:</strong> You can reset your Android Advertising ID or opt out of personalized advertisements anytime by opening your phone's <strong>Settings &rarr; Google &rarr; Ads</strong> and adjusting your device-level privacy preferences.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- 3. Storage & Deletion -->
-      <section class="section-block" id="storage">
-        <div class="section-header">
-          <div class="sec-icon">🗑️</div>
-          <div class="sec-titles">
-            <span>Section 03</span>
-            <h2>Storage &amp; Data Deletion</h2>
-          </div>
-        </div>
-        <div class="glass-card">
-          <div class="quick-callout">
-            <span class="callout-badge">Quick Summary</span>
-            <div class="callout-text">
-              <p>You have 100% control over your save data. You can export/backup files locally or wipe all progress instantly using the in-app Reset button.</p>
-            </div>
-          </div>
-          <div class="card-text">
-            <p>
-              Because your progress is stored on your device rather than on remote central servers, you possess absolute ownership and control over your data. We have built comprehensive self-service tools right into the game:
-            </p>
-          </div>
-
-          <div class="grid-cards">
-            <div class="sub-box" style="border-color: rgba(251, 113, 133, 0.4);">
-              <div class="sub-box-icon">⚠️</div>
-              <h4 style="color: var(--accent-rose);">In-App "Reset Progress"</h4>
-              <p>Open the in-app <strong>Settings Sheet</strong> and tap the red <strong>Reset Progress</strong> button. This instantly and permanently wipes all local storage data, resetting your account to zero immediately.</p>
-            </div>
-            <div class="sub-box">
-              <div class="sub-box-icon">📂</div>
-              <h4>Native Save File Export</h4>
-              <p>Download a backup `.json` file of your complete game progress straight to your phone's Documents folder anytime using the <strong>Download Save File</strong> button.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 4. Google Play Data Safety Table -->
-      <section class="section-block" id="data-safety">
-        <div class="section-header">
-          <div class="sec-icon">📊</div>
-          <div class="sec-titles">
-            <span>Section 04</span>
-            <h2>Google Play Data Safety Matrix</h2>
-          </div>
-        </div>
-        <div class="glass-card">
-          <div class="card-text">
-            <p>
-              This structured summary corresponds directly to our official declaration inside the Google Play Console <strong>Data Safety Form</strong>. Review the exact data categories processed when you use Bharat Quest:
-            </p>
-          </div>
-
-          <div class="table-responsive">
-            <table class="data-table">
-              <thead>
-                <tr>
-                  <th>Data Category</th>
-                  <th>Data Type</th>
-                  <th>Storage &amp; Processing</th>
-                  <th>Purpose</th>
-                  <th>Shared with 3rd Parties?</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>App Activity</strong></td>
-                  <td>Quiz Scores, Coins, Unlocked Legends, Streaks</td>
-                  <td><span class="badge-pill badge-local">🔒 On-Device Only</span></td>
-                  <td>Core Game Progression &amp; Offline Save</td>
-                  <td><strong>No</strong> (Never shared)</td>
-                </tr>
-                <tr>
-                  <td><strong>Device Identifiers</strong></td>
-                  <td>Advertising ID (AD_ID)</td>
-                  <td><span class="badge-pill badge-admob">📢 Google AdMob SDK</span></td>
-                  <td>Advertising, Frequency Capping &amp; Analytics</td>
-                  <td><strong>Yes</strong> (Google AdMob Network)</td>
-                </tr>
-                <tr>
-                  <td><strong>App Info &amp; Performance</strong></td>
-                  <td>Crash Logs &amp; Ad Load Diagnostics</td>
-                  <td><span class="badge-pill badge-admob">📢 Google AdMob SDK</span></td>
-                  <td>Bug Fixing &amp; Ad Rendering Optimization</td>
-                  <td><strong>Yes</strong> (Google AdMob Network)</td>
-                </tr>
-                <tr>
-                  <td><strong>User Preferences</strong></td>
-                  <td>Audio Volume, Haptic Toggle, Display Name</td>
-                  <td><span class="badge-pill badge-local">🔒 On-Device Only</span></td>
-                  <td>Customizing Gameplay Experience</td>
-                  <td><strong>No</strong> (Never shared)</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      <!-- 5. Third-Party SDKs -->
-      <section class="section-block" id="third-party">
-        <div class="section-header">
-          <div class="sec-icon">🔗</div>
-          <div class="sec-titles">
-            <span>Section 05</span>
-            <h2>Third-Party SDKs</h2>
-          </div>
-        </div>
-        <div class="glass-card">
-          <div class="card-text">
-            <p>
-              To deliver native mobile capabilities and rewarded video advertisements, Bharat Quest integrates reputable industry-standard libraries. These partners operate under their own strict privacy terms:
-            </p>
-          </div>
-          <ul class="check-list">
-            <li>
-              <span class="check-icon">✓</span>
-              <div>
-                <strong>Google AdMob SDK (`@capacitor-community/admob`):</strong> Used for serving advertisements. Review the official <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color: var(--gold-bright); font-weight: 700;">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer" style="color: var(--gold-bright); font-weight: 700;">How Google uses data from apps</a>.
-              </div>
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              <div>
-                <strong>Capacitor Native Plugins (`@capacitor/app`, `@capacitor/filesystem`, `@capacitor/haptics`):</strong> Used exclusively for handling background app state transitions, local file downloads to your device, and haptic vibration feedback.
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- 6. Children's Privacy -->
-      <section class="section-block" id="children">
-        <div class="section-header">
-          <div class="sec-icon">👶</div>
-          <div class="sec-titles">
-            <span>Section 06</span>
-            <h2>Children&apos;s Privacy</h2>
-          </div>
-        </div>
-        <div class="glass-card">
-          <div class="card-text">
-            <p>
-              Bharat Quest is an educational exploration mobile game celebrating Indian heritage suitable for general audiences. However, we do not knowingly solicit, collect, or store personally identifiable information from children under the age of 13.
-            </p>
-            <p>
-              Because our game functions without registration forms, real-name requirements, or server accounts, no personal identity details are ever collected from young players. Moreover, our Google AdMob integration strictly complies with applicable child safety laws including COPPA (Children's Online Privacy Protection Act) and the Google Play Families Policy where applicable.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- 7. Policy Updates -->
-      <section class="section-block" id="changes">
-        <div class="section-header">
-          <div class="sec-icon">🔄</div>
-          <div class="sec-titles">
-            <span>Section 07</span>
-            <h2>Changes to this Policy</h2>
-          </div>
-        </div>
-        <div class="glass-card">
-          <div class="card-text">
-            <p>
-              We may update this Privacy Policy from time to time to reflect new game features, legal compliance requirements, or enhancements in data protection standards. Whenever updates are published, the effective date at the top of this portal will be revised accordingly.
-            </p>
-            <p>
-              Your continued gameplay after any updates indicates your agreement to the updated terms.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- 8. Contact Support -->
-      <section class="section-block" id="contact">
-        <div class="section-header">
-          <div class="sec-icon">✉️</div>
-          <div class="sec-titles">
-            <span>Section 08</span>
-            <h2>Contact Support</h2>
-          </div>
-        </div>
-        <div class="glass-card" style="border-color: var(--border-gold-strong);">
-          <div class="card-text">
-            <p>
-              If you have any questions, developer inquiries, or feedback regarding your local data, ad preferences, or our privacy terms, our support team is ready to help:
-            </p>
-          </div>
-
-          <div class="sub-box" style="margin-top: 1.5rem; background: rgba(246, 183, 60, 0.08); border-color: var(--gold-primary);">
-            <div class="sub-box-icon">📧</div>
-            <h4>Official Support Email</h4>
-            <p style="margin-top: 0.5rem !important; font-size: 1.05rem !important; font-weight: 700;">
-              <a href="mailto:support@bharatquest.app?subject=Privacy%20Policy%20Inquiry" style="color: var(--gold-bright); text-decoration: underline;">support@bharatquest.app</a>
-            </p>
-            <p style="font-size: 0.85rem !important; margin-top: 0.5rem !important; color: var(--text-muted) !important;">
-              We actively monitor developer inquiries and aim to respond within 48 business hours.
-            </p>
-          </div>
-        </div>
-      </section>
-
-    </main>
-  </div>
-
-  <!-- Site Footer -->
-  <footer class="site-footer">
-    <div class="footer-wrapper">
-      <div class="footer-brand">
-        <div class="brand-group" style="margin-bottom: 0.5rem;">
-          <img src="logo.png" alt="Bharat Quest Logo" class="brand-logo-img" style="width: 30px; height: 30px; border-radius: 8px;" />
-          <span class="brand-name">Bharat Quest</span>
-        </div>
-        <p>Discover India. Collect Legends. Master History right on your mobile device.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Legal Hub</h4>
-        <ul>
-          <li><a href="#collect">Data Collection</a></li>
-          <li><a href="#advertising">AdMob Policies</a></li>
-          <li><a href="#storage">Data Deletion</a></li>
-          <li><a href="#data-safety">Safety Table</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="https://play.google.com/store/apps/details?id=com.bharatquest.app" target="_blank" rel="noopener noreferrer">Play Store App</a></li>
-          <li><a href="mailto:support@bharatquest.app">Contact Support</a></li>
-          <li><a href="#top">Back to Top &uarr;</a></li>
-        </ul>
+      <h1 class="text-gold-gradient">Privacy &amp; Data Safety Hub</h1>
+      <p>
+        Welcome to the official legal portal for <strong>Bharat Quest</strong>. We built this game with an offline-first philosophy: explore Indian heritage, collect rare cards, and master quizzes right on your device without intrusive tracking or mandatory accounts.
+      </p>
+      <div class="hero-badges-row">
+        <span class="badge-item"><span>📅</span> Effective: July 19, 2026</span>
+        <span class="badge-item" style="border-color: rgba(74, 222, 128, 0.4); color: var(--green);"><span>🔒</span> Local-First Save Data</span>
+        <span class="badge-item" style="border-color: rgba(56, 189, 248, 0.4); color: var(--blue);"><span>📢</span> Google AdMob Monitored</span>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 Bharat Quest. All rights reserved.</span>
-      <span>Made with pride for Indian culture and gaming.</span>
+
+    <!-- 1. Information We Collect -->
+    <section class="policy-section" id="collect">
+      <div class="section-title-header">
+        <div class="section-icon-box">📦</div>
+        <h2>Information We Collect</h2>
+      </div>
+      <article class="card-premium">
+        <div class="card-content">
+          <p>
+            Unlike online multiplayer applications that mandate email verification, cloud account logins, or continuous background syncing to remote data centers, <strong>Bharat Quest is designed primarily as an offline-first mobile game</strong>.
+          </p>
+          <p>
+            When you launch and play Bharat Quest, all core gameplay data and progression metrics are created and stored directly inside your device's local memory (`localStorage` and native device file storage). Specifically, the app generates and maintains the following locally:
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-box">
+            <div class="feature-icon">🏆</div>
+            <h4>Quiz &amp; Accuracy Records</h4>
+            <p>Tracks your completed quizzes, scores, best accuracy per state, and historical performance across Indian history and mythology.</p>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon">🪙</div>
+            <h4>Economy &amp; Streaks</h4>
+            <p>Stores your earned coins, rare gems, daily login streak counters, and claimed daily challenge rewards.</p>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon">🎴</div>
+            <h4>Collection Inventory</h4>
+            <p>Maintains your unlocked legend cards, state emblems, achievement badges, player avatars, and custom theme selections.</p>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon">⚙️</div>
+            <h4>App Settings</h4>
+            <p>Saves your audio sound effects volume, background music toggle, haptic vibration feedback preferences, and chosen display name.</p>
+          </div>
+        </div>
+
+        <div class="card-content" style="margin-top: 1.5rem;">
+          <p>
+            <strong>Local-First Guarantee:</strong> None of your personal identity, contact lists, photos, microphone recordings, or gameplay statistics are transmitted to our remote servers or sold to data brokers.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- 2. Advertising & AdMob -->
+    <section class="policy-section" id="advertising">
+      <div class="section-title-header">
+        <div class="section-icon-box">📢</div>
+        <h2>Advertising &amp; Google AdMob</h2>
+      </div>
+      <article class="card-premium">
+        <div class="card-content">
+          <p>
+            To keep Bharat Quest free to download and accessible across all Indian states and global regions, the application incorporates third-party advertisements delivered by <strong>Google AdMob</strong> (`@capacitor-community/admob`), a mobile advertising network operated by Google LLC.
+          </p>
+          <p>
+            When advertisements (such as optional rewarded video ads for extra game coins or interstitial breaks) are requested and rendered on your screen, Google AdMob automatically processes certain technical device identifiers and app usage metrics:
+          </p>
+        </div>
+
+        <ul class="check-list">
+          <li>
+            <span class="check-circle">✓</span>
+            <div><strong>Google Advertising ID (AD_ID):</strong> A unique, user-resettable identifier assigned by your Android OS. It is utilized exclusively for serving relevant ads, frequency capping (preventing repetitive ad views), and ad attribution.</div>
+          </li>
+          <li>
+            <span class="check-circle">✓</span>
+            <div><strong>Technical Device Characteristics:</strong> Your device model, Android OS version, screen resolution, system language, and network connection status (Wi-Fi vs. Cellular data).</div>
+          </li>
+          <li>
+            <span class="check-circle">✓</span>
+            <div><strong>Ad Diagnostic &amp; Crash Metrics:</strong> Anonymous performance reports if an ad fails to load or causes an unexpected application freeze during rendering.</div>
+          </li>
+        </ul>
+
+        <div class="card-content" style="margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid rgba(246, 183, 60, 0.2);">
+          <p>
+            <strong>Your Opt-Out Control:</strong> You can reset your Android Advertising ID or opt out of personalized advertisements at any time by navigating to your phone's <strong>Settings &rarr; Google &rarr; Ads</strong> and adjusting your device-level privacy controls.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- 3. Storage & Deletion -->
+    <section class="policy-section" id="storage">
+      <div class="section-title-header">
+        <div class="section-icon-box">🗑️</div>
+        <h2>Storage &amp; Data Deletion</h2>
+      </div>
+      <article class="card-premium">
+        <div class="card-content">
+          <p>
+            All game progression data is stored locally inside your application's secure data directory on your Android device. We do not maintain centralized user databases, nor do we require you to register an account with an email address or password.
+          </p>
+          <p>
+            Because you are in complete control of your local data, you have complete authority to manage, export, or permanently erase your progress whenever you choose right from within the app:
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-box" style="border-color: rgba(239, 68, 68, 0.5); background: rgba(239, 68, 68, 0.08);">
+            <div class="feature-icon">⚠️</div>
+            <h4 style="color: var(--danger);">In-App "Reset Progress"</h4>
+            <p>Open the in-app <strong>Settings Sheet</strong> and tap the red <strong>Reset Progress</strong> button. This instantly and permanently wipes all local storage, resetting your game to zero immediately.</p>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon">📂</div>
+            <h4>Native Save File Export</h4>
+            <p>Download a backup `.json` file of your complete game progress straight to your phone's Documents folder anytime using the <strong>Download Save File</strong> option.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- 4. Google Play Data Safety Table -->
+    <section class="policy-section" id="data-safety">
+      <div class="section-title-header">
+        <div class="section-icon-box">📊</div>
+        <h2>Google Play Data Safety Matrix</h2>
+      </div>
+      <article class="card-premium">
+        <div class="card-content">
+          <p>
+            This structured summary corresponds directly to our official declaration inside the Google Play Console <strong>Data Safety Form</strong>. Review what exact data categories are processed when you use Bharat Quest:
+          </p>
+        </div>
+
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Data Category</th>
+                <th>Data Type</th>
+                <th>Storage &amp; Processing</th>
+                <th>Purpose</th>
+                <th>Shared 3rd Party?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>App Activity</strong></td>
+                <td>Quiz Scores, Coins, Unlocked Legends, Streaks</td>
+                <td><span class="status-tag tag-on-device">🔒 On-Device Only</span></td>
+                <td>Core Game Progression &amp; Offline Save</td>
+                <td><strong>No</strong> (Never shared)</td>
+              </tr>
+              <tr>
+                <td><strong>Device Identifiers</strong></td>
+                <td>Advertising ID (AD_ID)</td>
+                <td><span class="status-tag tag-admob-sdk">📢 Google AdMob SDK</span></td>
+                <td>Advertising, Frequency Capping &amp; Analytics</td>
+                <td><strong>Yes</strong> (Google AdMob Network)</td>
+              </tr>
+              <tr>
+                <td><strong>App Performance</strong></td>
+                <td>Crash Logs &amp; Ad Load Diagnostics</td>
+                <td><span class="status-tag tag-admob-sdk">📢 Google AdMob SDK</span></td>
+                <td>Bug Fixing &amp; Ad Rendering Optimization</td>
+                <td><strong>Yes</strong> (Google AdMob Network)</td>
+              </tr>
+              <tr>
+                <td><strong>User Preferences</strong></td>
+                <td>Audio Volume, Haptic Toggle, Display Name</td>
+                <td><span class="status-tag tag-on-device">🔒 On-Device Only</span></td>
+                <td>Customizing Gameplay Experience</td>
+                <td><strong>No</strong> (Never shared)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <!-- 5. Third-Party SDKs -->
+    <section class="policy-section" id="third-party">
+      <div class="section-title-header">
+        <div class="section-icon-box">🔗</div>
+        <h2>Third-Party SDK Partners</h2>
+      </div>
+      <article class="card-premium">
+        <div class="card-content">
+          <p>
+            While Bharat Quest does not directly collect or share personal information, the application relies on select third-party libraries and native SDKs to provide core technical functionalities:
+          </p>
+        </div>
+        <ul class="check-list">
+          <li>
+            <span class="check-circle">✓</span>
+            <div>
+              <strong>Google AdMob SDK (`@capacitor-community/admob`):</strong> Used for serving in-game advertisements. Review the official <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color: var(--gold-bright); font-weight: 700;">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer" style="color: var(--gold-bright); font-weight: 700;">How Google uses data from apps</a>.
+            </div>
+          </li>
+          <li>
+            <span class="check-circle">✓</span>
+            <div>
+              <strong>Capacitor Native Plugins (`@capacitor/app`, `@capacitor/filesystem`, `@capacitor/haptics`):</strong> Required for application distribution, native haptic vibration feedback, file save exports, and system-level app state management.
+            </div>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- 6. Children's Privacy -->
+    <section class="policy-section" id="children">
+      <div class="section-title-header">
+        <div class="section-icon-box">👶</div>
+        <h2>Children&apos;s Privacy</h2>
+      </div>
+      <article class="card-premium">
+        <div class="card-content">
+          <p>
+            Bharat Quest is an educational exploration game celebrating Indian culture and history suitable for general audiences. However, we do not knowingly solicit, collect, or store personally identifiable information from children under the age of 13.
+          </p>
+          <p>
+            Because the game operates without user registration or server-side accounts, no names, birthdates, or contact details are ever collected from young players. Furthermore, third-party advertising via Google AdMob is configured to adhere to applicable child protection regulations including COPPA (Children's Online Privacy Protection Act) and the Google Play Families Policy where applicable.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- 7. Policy Updates -->
+    <section class="policy-section" id="changes">
+      <div class="section-title-header">
+        <div class="section-icon-box">🔄</div>
+        <h2>Changes to this Policy</h2>
+      </div>
+      <article class="card-premium">
+        <div class="card-content">
+          <p>
+            We may update this Privacy Policy periodically to reflect new game features, regulatory compliance adjustments, or improvements in data protection practices. When modifications are made, the effective date at the top of this page will be updated accordingly.
+          </p>
+          <p>
+            We encourage all players to review this webpage periodically when installing app updates. Your continued use of Bharat Quest following the publication of changes constitutes acceptance of those updates.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- 8. Contact Support -->
+    <section class="policy-section" id="contact">
+      <div class="section-title-header">
+        <div class="section-icon-box">✉️</div>
+        <h2>Contact Support</h2>
+      </div>
+      <article class="card-premium" style="border-color: var(--gold-bright);">
+        <div class="card-content">
+          <p>
+            If you have any questions, developer suggestions, or concerns regarding this Privacy Policy, your local data, or our advertising integration, please do not hesitate to reach out to our support team:
+          </p>
+        </div>
+
+        <div class="feature-box" style="margin-top: 1.5rem; background: rgba(246, 183, 60, 0.1); border-color: var(--gold-bright);">
+          <div class="feature-icon">📧</div>
+          <h4>Official Developer Support</h4>
+          <p style="margin-top: 0.4rem !important; font-size: 1.05rem !important;">
+            Email us at: <a href="mailto:support@bharatquest.app?subject=Privacy%20Policy%20Inquiry" style="color: var(--gold-bright); font-weight: 800; text-decoration: underline;">support@bharatquest.app</a>
+          </p>
+          <p style="font-size: 0.85rem !important; margin-top: 0.5rem !important; color: var(--text-muted) !important;">
+            We aim to respond to all developer and privacy inquiries within 48 business hours.
+          </p>
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+          <a href="https://play.google.com/store/apps/details?id=com.bharatquest.app" target="_blank" rel="noopener noreferrer" class="btn-quest">
+            <span>🎮</span> <span>View Bharat Quest on Google Play</span>
+          </a>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="app-footer">
+    <div class="footer-inner">
+      <div class="footer-brand-row">
+        <img src="logo.png" alt="Bharat Quest Logo" />
+        <span class="text-gold-gradient">BHARAT QUEST</span>
+      </div>
+      <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 480px;">
+        Discover India. Collect Legends. Master History right on your mobile device.
+      </p>
+      <div class="footer-links">
+        <a href="#collect">Data Collection</a>
+        <a href="#advertising">AdMob &amp; Ads</a>
+        <a href="#storage">Data Deletion</a>
+        <a href="#data-safety">Safety Table</a>
+        <a href="mailto:support@bharatquest.app">Contact Support</a>
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 Bharat Quest. All rights reserved. Designed exact to Bharat Quest UI standards.
+      </div>
     </div>
   </footer>
 
-  <!-- Interactive TOC Highlighting Script -->
+  <!-- Interactive Active Navigation Highlight Script -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      const links = document.querySelectorAll('.nav-menu a');
-      const sections = document.querySelectorAll('.section-block, .hero-box');
+      const chips = document.querySelectorAll('.chip-nav-list a');
+      const sections = document.querySelectorAll('.policy-section, .hero-game-box');
 
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             const id = entry.target.getAttribute('id');
-            links.forEach(link => {
-              link.classList.remove('active');
-              if (link.getAttribute('href') === `#${id}`) {
-                link.classList.add('active');
+            chips.forEach(chip => {
+              chip.classList.remove('active');
+              if (chip.getAttribute('href') === `#${id}`) {
+                chip.classList.add('active');
               }
             });
           }
         });
-      }, { rootMargin: '-120px 0px -65% 0px' });
+      }, { rootMargin: '-130px 0px -65% 0px' });
 
       sections.forEach(sec => {
         if (sec.getAttribute('id')) observer.observe(sec);
