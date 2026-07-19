@@ -728,3 +728,32 @@ body {
     gap: 0.5rem;
   }
 }
+
+/* Logo & Emblem Assets Styling */
+.brand-logo-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 0 20px -2px var(--gold-primary);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.hero-emblem-wrap {
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.hero-emblem-img {
+  width: 110px;
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 0 40px -5px var(--gold-primary), 0 20px 40px -10px rgba(0,0,0,0.8);
+  border: 1px solid var(--border-gold-strong);
+  animation: floatEmblem 4s ease-in-out infinite;
+}
+
+@keyframes floatEmblem {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
